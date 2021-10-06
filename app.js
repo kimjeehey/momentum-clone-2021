@@ -20,3 +20,38 @@ const female = true;
 const female = null;
 
 console.log(male);
+
+// Arrays
+const dayOfWeek = ["mon", "tue", "wed", "thu", "fri", "sat"];
+
+// get an item from array
+console.log(dayOfWeek[4]);
+
+// add one more day to the array
+dayOfWeek.push("sun");
+
+// sunday added
+console.log(dayOfWeek);
+
+// Objects
+const player = {
+  name: "Emo",
+  points: 10,
+  cute: true,
+};
+
+console.log(player.name);
+
+player.cute = false;
+console.log(player);
+
+// object can be added or modified
+player.lastName = "Kim";
+player.points = player.points + 15;
+
+console.log(player);
+
+// function
+function sayHello() {
+  console.log("Hellooo!");
+}
