@@ -17,7 +17,7 @@ console.log("hello " + yourName);
 // boolean
 const male = false;
 const female = true;
-const female = null;
+// const female = null;
 
 console.log(male);
 
@@ -51,8 +51,42 @@ player.points = player.points + 15;
 
 console.log(player);
 
-// function
-function sayHello() {
-  console.log("Hellooo!");
+// function = 계속해서 사용할 수 있는 코드조각
+
+function sayHello(name, age) {
+  console.log("Hello my name is " + name + "and I am " + age + " years old");
 }
 
+sayHello("Kim", 28);
+
+const firstNumber = 40;
+const secondNumber = 8;
+//
+function plus(firstNumber, secondNumber) {
+  console.log(firstNumber + secondNumber);
+}
+
+plus(firstNumber, secondNumber);
+
+function divide(firstNumber, secondNumber) {
+  console.log(firstNumber / secondNumber);
+}
+
+divide(firstNumber, secondNumber);
+
+const person = {
+  name: "nico",
+  sayHello: function (otherPersonsName) {
+    console.log(
+      "hello!" +
+        otherPersonsName +
+        ", I am " +
+        person.name +
+        ". nice to meet you"
+    );
+  },
+};
+
+console.log(person.name);
+
+person.sayHello("lynn");
