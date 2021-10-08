@@ -90,3 +90,58 @@ const person = {
 console.log(person.name);
 
 person.sayHello("lynn");
+
+const c = 40;
+const d = 5;
+
+const calculator = {
+  plus: function (c, d) {
+    console.log(c + d);
+  },
+  minus: function (c, d) {
+    console.log(c - d);
+  },
+  multi: function (c, d) {
+    console.log(c * d);
+  },
+  divide: function (c, d) {
+    console.log(c / d);
+  },
+};
+
+calculator.plus(c, d);
+calculator.minus(c, d);
+calculator.multi(c, d);
+calculator.divide(c, d);
+
+// using returne - different way
+const calculatorReturn = {
+  plus: function (c, d) {
+    return c + d;
+  },
+  minus: function (c, d) {
+    return c - d;
+  },
+  multi: function (c, d) {
+    return c * d;
+  },
+  divide: function (c, d) {
+    return c / d;
+  },
+};
+
+const plustResult = calculatorReturn.plus(c, d);
+const minusResult = calculatorReturn.minus(c, d);
+const multiResult = calculatorReturn.multi(plustResult, d);
+const divideResult = calculatorReturn.divide(plustResult, minusResult);
+
+// Returns
+
+const age = 24;
+function calculatorKrAge(globalAge) {
+  return globalAge + 2 + " years old";
+}
+
+const krAge = calculatorKrAge(age);
+
+console.log(krAge);
