@@ -145,3 +145,14 @@ function calculatorKrAge(globalAge) {
 const krAge = calculatorKrAge(age);
 
 console.log(krAge);
+
+// Conditions if/else
+const old = prompt("How old are you?");
+
+console.log(old);
+// Recognizing String or Number
+console.log(typeof old, parseInt(age));
+
+const favNumber = parseInt(prompt("What is your favorite number?"));
+
+console.log(favNumber);
