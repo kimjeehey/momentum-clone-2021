@@ -159,10 +159,21 @@ console.log(favNumber);
 console.log(isNaN(favNumber));
 // NaN : Not a Number
 
-if (isNaN(favNumber)) {
+if (isNaN(favNumber) || favNumber < 0) {
   // condition === true
-  console.log("please write a number");
+  console.log("please write a positive number");
+} else if (favNumber < 18) {
+  console.log("Too young");
+} else if (favNumber >= 18 && favNumber <= 50) {
+  console.log("you can drink");
+} else if (favNumber === 100) {
+  console.log("you are awesome");
+} else if (51 < favNumber <= 80) {
+  console.log("you should stop drinking");
 } else {
   // condition === false
   console.log("Thanks!");
 }
+
+// !== : === 반대
+// if((a && b) || (c && d))
