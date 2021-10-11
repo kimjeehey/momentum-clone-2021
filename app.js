@@ -156,3 +156,13 @@ console.log(typeof old, parseInt(age));
 const favNumber = parseInt(prompt("What is your favorite number?"));
 
 console.log(favNumber);
+console.log(isNaN(favNumber));
+// NaN : Not a Number
+
+if (isNaN(favNumber)) {
+  // condition === true
+  console.log("please write a number");
+} else {
+  // condition === false
+  console.log("Thanks!");
+}
