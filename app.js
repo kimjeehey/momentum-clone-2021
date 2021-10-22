@@ -32,10 +32,35 @@ function handleTitleEnter() {
 }
 
 function handleTitleLeave() {
-  names.style.color = "green";
-  names.innerText = "Click me";
+  names.style.color = "black";
 }
 
-names.addEventListener("click", handleTitleClick);
+function handleWindowResize() {
+  document.body.style.backgroundColor = "pink";
+}
+
+function handleWindowCopy() {
+  alert("Such a copy!");
+}
+
+function handleWindowOffline() {
+  alert("Your internet is not working");
+}
+
+function handleWindowOnline() {
+  alert("Welcome back!");
+}
+
+// 아래와 똑같이 동작 names.addEventListener("click", handleTitleClick);
+names.onclick = handleTitleClick;
+
 names.addEventListener("mouseenter", handleTitleEnter);
 names.addEventListener("mouseleave", handleTitleLeave);
+
+// event lister을 선호하는 이유는 names.removeEventListener 를 쓸 수 있음
+
+window.addEventListener("resize", handleWindowResize);
+window.addEventListener("copy", handleWindowCopy);
+
+window.addEventListener("offline", handleWindowOffline);
+window.addEventListener("online", handleWindowOnline);
