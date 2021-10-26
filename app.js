@@ -1,13 +1,10 @@
-const title = document.querySelector(".title");
+const loginForm = document.querySelector(".login-form");
+const loginInput = loginForm.querySelector("input");
 
-function handleTitleClick() {
-  title.classList.toggle("clicked");
-  // const clickedClass = "clicked";
-  // if (title.classList.contains(clickedClass)) {
-  //   title.classList.remove(clickedClass);
-  // } else {
-  //   title.classList.add(clickedClass);
-  // }
+function onLoginSubmit(event) {
+  const username = loginInput.value;
+  event.preventDefault();
+  console.log(event);
 }
 
-title.addEventListener("click", handleTitleClick);
+loginForm.addEventListener("submit", onLoginSubmit);
