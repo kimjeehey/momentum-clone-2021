@@ -10,3 +10,7 @@ h1 {
 .clicked {
   color: lightcoral;
 }
+
+.hidden {
+  display: none;
+}
