@@ -1,4 +1,5 @@
 const clock = document.querySelector(".clock");
+const calendar = document.querySelector(".calendar");
 
 function getClock() {
   const date = new Date();
@@ -10,3 +11,13 @@ function getClock() {
 
 getClock();
 setInterval(getClock, 1000);
+
+function getDate() {
+  const today = new Date();
+  const year = today.getFullYear();
+  const month = String(today.getMonth()).padStart(2, "0");
+  const day = String(today.getDate()).padStart(2, "0");
+  calendar.innerText = `Today ${year}.${month}.${day}`;
+}
+
+getDate();
