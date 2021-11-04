@@ -9,8 +9,10 @@
     <title>Document</title>
   </head>
   <body>
+    <!-- clock -->
     <h3 class="calendar">2000.00.00</h3>
     <h1 class="clock">00:00:00</h1>
+    <!-- login -->
     <form class="login-form hidden">
       <input
         required
@@ -21,8 +23,16 @@
       <button>Start</button>
     </form>
 
+    <!-- greeting -->
     <h2 class="greeting hidden"></h2>
 
+    <!-- todo -->
+    <form class="todo-form">
+      <input type="text" required placeholder="What are you up to today?" />
+    </form>
+    <ui class="todo-list"></ui>
+
+    <!-- quotes -->
     <div class="quote">
       <span></span>
       <span></span>
@@ -32,5 +42,6 @@
     <script src="js/clock.js"></script>
     <script src="js/quotes.js"></script>
     <script src="js/background.js"></script>
+    <script src="js/todo.js"></script>
   </body>
 </html>
