@@ -17,7 +17,7 @@ function getDate() {
   const year = today.getFullYear();
   const month = String(today.getMonth()).padStart(2, "0");
   const day = String(today.getDate()).padStart(2, "0");
-  calendar.innerText = `Today ${year}.${month}.${day}`;
+  calendar.innerText = `${day} · ${month} · ${year}`;
 }
 
 getDate();

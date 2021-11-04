@@ -31,3 +31,19 @@ if (savedUsername === null) {
   //show the greetings
   paintGreetings(savedUsername);
 }
+
+// const now = new.Date();
+//   const hr = now.getHours();
+//   const morning = "morning,"
+//   const afternoon = "afternoon,"
+//   const evening = "evening,"
+
+//   if(hr >= 0 && hr < 12){
+//     greeting.innerText = `Good ${morning} ${username} 🙌`;
+//   }
+//   else if(hr >= 12 && hr < 17) {
+//     greeting.innerText = `Good ${afternoon} ${username} 🙌`;
+//   }
+//   else if(hr >= 17 && hr < 24) {
+//     greeting.innerText = `Good ${evening} ${username} 🙌`;
+//   }
