@@ -18,6 +18,7 @@ const images = [
 const chosenImage = images[Math.floor(Math.random() * images.length)];
 
 const bgImage = document.createElement("img");
+bgImage.className = "bg-image";
 
 const bgImageOverlay = document.createElement("div");
 bgImageOverlay.className = "bg-overlay";
