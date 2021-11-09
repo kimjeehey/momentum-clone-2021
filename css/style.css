@@ -25,12 +25,12 @@ span {
 
 h1 {
   font-size: 4rem;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin: 1rem 0;
 }
 
 h2 {
   font-size: 2rem;
+  margin-bottom: 0.5rem;
 }
 
 .calendar {
@@ -41,7 +41,7 @@ h2 {
 .form {
   position: relative;
   width: 100%;
-  max-width: 480px;
+  max-width: 600px;
   padding: 0 3rem;
   display: flex;
   align-items: center;
@@ -49,16 +49,20 @@ h2 {
   margin: 1rem 0;
 }
 
+.form input::placeholder {
+  color: var(--white-100);
+}
+
 .form input {
   font-size: 1rem;
   padding: 1.5rem;
   width: 100%;
-  max-width: 480px;
-  border: none;
+  max-width: 600px;
+  border: 1px solid var(--white-60);
   border-radius: 200px;
-  background-color: var(--primary-100);
+  background-color: var(--white-20);
   outline: none;
-  color: var(--black-100);
+  color: var(--white-100);
 }
 
 .form button {
@@ -120,20 +124,23 @@ h2 {
 
 .todo-list {
   width: 100%;
-  max-width: 480px;
+  max-width: 600px;
   max-height: 40vh;
-  overflow: scroll;
+  overflow-y: scroll;
   padding: 0 3rem;
 }
 
 .todo-list-li {
   background-color: rgba(255, 255, 255, 0.4);
-  padding: 1rem 1.5rem;
+  padding: 1.125rem 1.5rem;
   border-radius: 40px;
   margin-bottom: 0.5rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  overflow-x: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .delete-button {
