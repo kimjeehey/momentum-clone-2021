@@ -130,19 +130,21 @@ h2 {
   padding: 0 3rem;
 }
 
-.todo-list-li {
-  background-color: rgba(255, 255, 255, 0.4);
+.todo-list__li {
+  background-color: var(--white-20);
   padding: 1.125rem 1.5rem;
   border-radius: 40px;
   margin-bottom: 0.5rem;
   display: flex;
   align-items: center;
+  flex-shrink: 0;
   justify-content: space-between;
   overflow-x: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
+  transition: all 0.4s ease;
 }
 
 .delete-button {
   cursor: pointer;
+  width: 24px;
+  height: 24px;
 }
