@@ -148,3 +148,26 @@ h2 {
   width: 24px;
   height: 24px;
 }
+
+@media screen and (max-width: 420px) {
+  body {
+    margin-top: 80px;
+  }
+  .form {
+    padding: 0 1.5rem;
+  }
+  .form button {
+    right: 32px;
+  }
+  .todo-list {
+    padding: 0 1.5rem;
+  }
+  .calendar {
+    position: absolute;
+    top: 1.5rem;
+  }
+  .quote {
+    bottom: 1.5rem;
+    padding: 0 1.5rem;
+  }
+}
